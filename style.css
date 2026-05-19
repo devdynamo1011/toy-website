@@ -2,7 +2,9 @@
 :root{
     --primary-blue:rgb(0, 0, 167);
     --secondary-blue:rgb(0, 0, 97);
+    --title:rgb(0, 0, 27);
     --border-radius-1:10px;
+    --gray-bg:rgb(208, 208, 208);
 }
 .container{
     max-width: 1200px;
@@ -20,7 +22,14 @@
 .btn:hover{
     background-color: var(--secondary-blue);
 }
-
+h3{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--title);
+}
+h3+p{
+    text-align: center;
+}
 
 /* Landing Page Start */
 .banner{
@@ -61,8 +70,7 @@
     color: white;
 }
 .banner-content>.banner-text>h1{
-    font-size: 4em;
-    
+    font-size: 4em;  
 }
 .banner-content>.banner-text>*:not(.btn){
     margin-bottom: 40px;
@@ -77,4 +85,42 @@
     object-fit: cover;
     object-position: right;
 }
+.sm-scr-btn{
+    display: none;
+}
 /* Landing Page End */
+
+
+
+/* Features Page Start */
+
+.features{
+    padding: 80px 0px;
+}
+.features-container{
+    padding: 80px 0px;
+    background-color: var(--gray-bg);
+}
+.features-content{
+    display: flex;
+}
+.features-content>div{
+    max-width: calc(100%/3);
+}
+.features-content>div>div{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features-container>.features-content p{
+    text-align: center;
+}
+.features-container>.features-content img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 50%;
+}
+/* Features Page Start */
