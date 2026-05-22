@@ -20,6 +20,10 @@
         flex-direction: column;
         align-items: center;
     }
+    .banner-content>.banner-img{
+        height: 500px !important;
+        width: 500px !important;
+    }
     .banner-content>*:not(.sm-scr-btn){
         width: 100%;
     }
@@ -40,10 +44,37 @@
     .features-content>div{
         max-width: 100%;
     }
+    .features-faq-content>div{
+        flex-direction: column;
+    }
+    .features-faq-content>div>input{
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .video-text>div{
+        flex-direction: column;
+    }
+    .video-text>div>div{
+        width: 100%;
+    }
+    .video-text>div>div:not(:last-child){
+        margin-bottom: 30px;
+    }
+    /* .carousel>div>img{
+        left: 100px;
+    } */
 }
 @media (max-width:1024px) {
     .container{
         padding: 0 50px;
+    }
+    .features-faq-content{
+        padding: 40px 0px;
+    }
+    .banner-content>.banner-img{
+        height: 350px;
+        width: 350px;
     }
 }
 @media (max-width:1200px) {

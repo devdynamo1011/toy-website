@@ -35,6 +35,8 @@ h3+p{
 .banner{
     background-color: rgb(44, 44, 255);
     padding: 50px 0px;
+    position: relative;
+    box-shadow: 0px 20px 0px gray;
 }
 .banner nav{
     display: flex;
@@ -88,6 +90,25 @@ h3+p{
 .sm-scr-btn{
     display: none;
 }
+.down-btn{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%,50%);
+    background-color: rgb(44, 44, 255);
+    box-shadow: 0px 20px 0px gray;
+}
+.down-btn>i{
+    color: white;
+    font-size: 2rem;
+}
 /* Landing Page End */
 
 
@@ -123,4 +144,114 @@ h3+p{
     object-position: right;
     border-radius: 50%;
 }
+.features-faq-container{
+    padding: 80px;
+}
+.features-faq-content{
+    padding: 40px 0px;
+    background-color: var(--gray-bg);
+    border-radius: 10px;
+}
+.features-faq-content>h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.features-faq-content>div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-faq-content>div>input{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 500px;
+}
+.features-faq-content>div>input:focus{
+    outline: none;
+}
 /* Features Page Start */
+
+
+/* Video Page Start */
+.video-container{
+    width: 100%;
+}
+.video-text{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: var(--gray-bg);
+}
+.video-text h4{
+    margin-bottom: 10px;
+}
+.video-text p{
+    margin-bottom: 15px;
+}
+.video-text>div{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.video-text>div>div{
+    width: 45%;
+}
+/* Video Page Start */
+
+/* Gallery Page Start */
+
+.carousel{
+    perspective: 1000px;
+    overflow: hidden;
+}
+.carousel>div{
+    transform-style: preserve-3d;
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 450px;
+    animation: rotateImages 6s linear infinite reverse;
+}
+.carousel>div>img{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    
+}
+.carousel>div>img:nth-child(1){
+    transform: translateX(0px) translateZ(400px) rotateY(0deg);
+}
+.carousel>div>img:nth-child(2){
+    transform: translateX(282.84px) translateZ(282.84px) rotateY(45deg);
+}
+.carousel>div>img:nth-child(3){
+    transform: translateX(400px) translateZ(0px) rotateY(90deg);
+}
+.carousel>div>img:nth-child(4){
+    transform: translateX(282.84px) translateZ(-282.84px) rotateY(135deg);
+}
+.carousel>div>img:nth-child(5){
+    transform: translateX(0px) translateZ(-400px) rotateY(180deg);
+}
+.carousel>div>img:nth-child(6){
+    transform: translateX(-282.84px) translateZ(-282.84px) rotateY(225deg);
+}
+.carousel>div>img:nth-child(7){
+    transform: translateX(-400px) translateZ(0px) rotateY(270deg);
+}
+.carousel>div>img:nth-child(8){
+    transform: translateX(-282.84px) translateZ(282.84px) rotateY(315deg);
+}
+
+
+@keyframes rotateImages {
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
+/* Gallery Page End */
